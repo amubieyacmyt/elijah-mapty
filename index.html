@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratical World Map</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <div class="header-1">
+    <header>
+        <h1>Pratical Map</h1>
+    </header>
+    <main>
+        <section id="continent-buttons" class="flex-container">
+            <button class="continent-button" data-continent="africa">Africa</button>
+            <button class="continent-button" data-continent="asia">Asia</button>
+            <button class="continent-button" data-continent="europe">Europe</button>
+            <button class="continent-button" data-continent="north-america">North America</button>
+            <button class="continent-button" data-continent="south-america">South America</button>
+            <button class="continent-button" data-continent="australia">Australia</button>
+        </section>
+        <div id="search-container" class="flex-container">
+            <input type="text" id="country-search" placeholder="Search for a country">
+            <button id="search-button">Search</button>
+        </div>
+    </div>
+        <div id="country-info">
+            <!-- Country details will be dynamically inserted here -->
+        </div>
+        <div id="world-map" class="map-container hidden"></div>
+    </main>
+    <div id="spinner" class="spinner hidden">
+        <!-- Spinner can be any kind of spinner you like, e.g., a CSS animated spinner -->
+        <div class="loader"></div>
+    </div>
+    
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
